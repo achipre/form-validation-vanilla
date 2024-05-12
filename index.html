@@ -10,7 +10,7 @@
   <body>
     <h1>Form Validator</h1>
     <main class="container">
-      <form>
+      <form id="form">
         <!--- Username Field -->
         <label for="username">Username</label>
         <input
@@ -18,9 +18,7 @@
           type="text"
           name="username"
           placeholder="Username"
-          required
         />
-        <span hidden>Please fill the empty field</span>
         <!-- Email Field -->
         <label for="email">Email</label>
         <input
@@ -28,9 +26,7 @@
           type="email"
           name=""
           placeholder="email@example.com"
-          required
         />
-        <span hidden>Please fill the empty field</span>
         <!-- Password Field -->
         <label form="password">Password</label>
         <input
@@ -38,9 +34,7 @@
           type="password"
           name="password"
           placeholder="***********"
-          required
         />
-        <span hidden>Please fill the empty field</span>
         <!-- Password Check  -->
         <label form="passwordCheck">Confirm Password</label>
         <input
@@ -48,11 +42,11 @@
           type="password"
           name="password"
           placeholder="***********"
-          required
         />
-        <span hidden>Please fill the empty field</span>
+        <span id="errorMessage"></span>
         <button type="submit">Submit</button>
       </form>
     </main>
+    <script type="module" src="main.js"></script>
   </body>
 </html>
