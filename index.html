@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validalidator | Vanilla</title>
+  </head>
+  <body>
+    <h1>Form Validator</h1>
+    <main class="container">
+      <form>
+        <!--- Username Field -->
+        <label for="username">Username</label>
+        <input
+          id="username"
+          type="text"
+          name="username"
+          placeholder="Username"
+          required
+        />
+        <span hidden>Please fill the empty field</span>
+        <!-- Email Field -->
+        <label for="email">Email</label>
+        <input
+          id="email"
+          type="email"
+          name=""
+          placeholder="email@example.com"
+          required
+        />
+        <span hidden>Please fill the empty field</span>
+        <!-- Password Field -->
+        <label form="password">Password</label>
+        <input
+          id="password"
+          type="password"
+          name="password"
+          placeholder="***********"
+          required
+        />
+        <span hidden>Please fill the empty field</span>
+        <!-- Password Check  -->
+        <label form="passwordCheck">Confirm Password</label>
+        <input
+          id="passwordCheck"
+          type="password"
+          name="password"
+          placeholder="***********"
+          required
+        />
+        <span hidden>Please fill the empty field</span>
+        <button type="submit">Submit</button>
+      </form>
+    </main>
+  </body>
+</html>
