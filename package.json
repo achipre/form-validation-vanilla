@@ -1,0 +1,17 @@
+{
+  "name": "form-validator",
+  "private": true,
+  "version": "1.0.0",
+  "description": "A form Validator",
+  "type": "module",
+  "devDependencies": {
+    "vite": "^5.2.11"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "author": "Alex Chipre",
+  "license": "ISC"
+}

@@ -3,24 +3,70 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  background-color: #fdffc2;
+}
+#logo {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  width: 2.5rem;
+}
+.logoanima {
+  animation: logoanimate 1s ease-out forwards;
+}
+@keyframes logoanimate {
+  0%,
+  100% {
+    rotate: 0deg;
+  }
+  10%,
+  50%,
+  90% {
+    rotate: -20deg;
+  }
+
+  30%,
+  70% {
+    rotate: 20deg;
+  }
+}
 h1 {
+  color: #ff0080;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.5rem;
   text-align: center;
 }
 .container {
   padding: 1rem;
   display: flex;
+  flex-direction: column;
+  gap: 2rem;
   justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+#form {
+  width: 100%;
 }
 label,
 input,
 button {
-  font-family: "Courier New", Courier, monospace;
-  font-size: 2rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.2rem;
   display: flex;
+  color: #607274;
+  border: none;
 }
 input {
+  width: 100%;
+  padding: 1rem;
+  border-bottom: 1px solid #b19470;
   margin-bottom: 1rem;
+}
+#errorMessage {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 0.8rem;
 }
 button {
   cursor: pointer;
@@ -28,4 +74,38 @@ button {
   align-items: center;
   justify-content: center;
   padding: 1rem;
+}
+#link-github {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  & img {
+    width: 2.5rem;
+  }
+}
+
+@media (width > 320px) {
+  #logo {
+    width: 3rem;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  #form {
+    max-width: 360px;
+  }
+  label {
+    font-size: 1.4rem;
+  }
+  #errorMessage {
+    font-size: 1rem;
+  }
+
+  #link-github {
+    & img {
+      width: 3rem;
+    }
+  }
 }
